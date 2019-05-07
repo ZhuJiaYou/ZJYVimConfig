@@ -11,7 +11,7 @@ syntax on
 set tabstop=4   "set Tab = 4
 set softtabstop=4       "indent= 4
 set shiftwidth=4 
-set cc=120
+set cc=110
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\ %{\"[ENCD=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FMT=%{&ff}]\ [ASC=%03.3b]\ [HEX=%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
@@ -47,9 +47,9 @@ func! Rungdb()
     exec "!gdb ./%<"
 endfunc
 
-""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 "Others
-""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 filetype plugin indent on
 set autowrite               
 set ruler           
@@ -61,7 +61,12 @@ set autoindent
 set cindent
 set mouse=a  "always use mouse 
 set backspace=indent,eol,start
-
+"""""""""""""""""""""""""""""""""
+"Cursor position
+"""""""""""""""""""""""""""""""""
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 """"""""""""""""""""""""""""""""""
 "config for jedi
 """"""""""""""""""""""""""""""""""
