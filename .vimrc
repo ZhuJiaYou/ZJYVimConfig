@@ -86,3 +86,4 @@ let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 autocmd VimEnter * NERDTree | wincmd p
 let g:NERDTreeWinSize=25
+let NERDTreeShowHidden=1
