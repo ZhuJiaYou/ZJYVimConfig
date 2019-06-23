@@ -5,7 +5,10 @@ set nu  "show line number
 syntax enable "syntax highlight  
 syntax on
 set cc=110
-set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\ %{\"[ENCD=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FMT=%{&ff}]\ [ASC=%03.3b]\ [HEX=%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w%=\ [TYPE=%Y]\
+			\ %{\"[ENCD=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\
+			\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [FMT=%{&ff}]\ [ASC=%03.3b]\
+			\ [HEX=%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 """"""""""""""""""""""""""""""""
 "Key command
