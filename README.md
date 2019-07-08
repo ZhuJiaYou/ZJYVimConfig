@@ -23,3 +23,7 @@ Flake8 is a wrapper around these tools:
     Ned Batchelder's McCabe script
 
 For more information, visit the [website](https://github.com/PyCQA/flake8)
+
+### Others
+
+1. Rich Statusline
