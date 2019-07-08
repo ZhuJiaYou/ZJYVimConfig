@@ -27,3 +27,4 @@ For more information, visit the [website](https://github.com/PyCQA/flake8)
 ### Others
 
 1. Rich Statusline
+2. Key map <F5> for compile and run the code.
