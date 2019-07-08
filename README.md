@@ -29,3 +29,4 @@ For more information, visit the [REPO](https://github.com/PyCQA/flake8)
 1. Rich Statusline
 2. Key map "F5" for compile and run the code.
 3. key map "F6" for debug the code.
+4. Always use mouse.
