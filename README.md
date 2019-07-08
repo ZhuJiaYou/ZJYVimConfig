@@ -10,7 +10,7 @@ For more information, visit the [website](https://github.com/maralla/completor)
 
 A tree explorer plugin for vim, I configure it for my habits in "Config for NERDTree".
 
-For more information, visit the [website](https://github.com/scrooloose/nerdtree)
+For more information, visit the [REPO](https://github.com/scrooloose/nerdtree)
 
 ### Flake8
 
